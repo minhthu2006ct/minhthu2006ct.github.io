@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minh Thư Portfolio</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5eee6;
+      --main: #e8d8c3;
+      --text: #4b3f35;
+      --accent: #d6bfa9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Space Mono', monospace;
+    }
+
+    header {
+      background: var(--main);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 15px;
+    }
+
+    .project {
+      background: var(--accent);
+      height: 150px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--main);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    @media (max-width:600px){
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Minh Thư 🌷</h1>
+  <p>Sinh viên năm 2 - Hutech | Lười nhưng tò mò 😴✨</p>
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#blog">Blog</a>
+    <a href="#projects">Dự án</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>👀 Giới thiệu</h2>
+  <div class="card">
+    <p>
+      Xin chào, mình là <b>Phan Nguyễn Minh Thư</b>, sinh viên năm 2 tại Hutech.
+      Mình không phải kiểu người siêng năng đâu… nhưng lại cực kỳ tò mò về mọi thứ xung quanh 😆  
+      Đặc biệt là truyền thông, thiết kế và mấy thứ “nhìn đẹp đẹp”.
+    </p>
+  </div>
+</section>
+
+<section id="blog">
+  <h2>📝 Blog / News</h2>
+  <div class="card">
+    <h3>Trải nghiệm đi thực tập truyền thông</h3>
+    <p>Lần đầu làm content cho một page local, mình học được cách viết caption “giả trân nhưng phải tự nhiên” 😂</p>
+  </div>
+
+  <div class="card">
+<h3>Thiết kế poster đầu đời</h3>
+    <p>Mình từng mất 5 tiếng chỉ để chọn màu pastel… nhưng kết quả cũng khá xinh 😌</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>🎨 Dự án / Thiết kế</h2>
+  <div class="grid">
+    <div class="project">Poster</div>
+    <div class="project">Logo</div>
+    <div class="project">Social Media</div>
+    <div class="project">UI Design</div>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>📄 Resume</h2>
+  <div class="card">
+    <p><b>Học vấn:</b> Đại học Hutech (2024 - nay)</p>
+    <p><b>Kỹ năng:</b> Photoshop, Figma, viết content</p>
+    <p><b>Kinh nghiệm:</b> Cộng tác viên content cho page local (bịa nhưng hợp lý 😌)</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📩 Liên hệ</h2>
+  <div class="card">
+    <p>Email: minhthu2006ct@gmail.com</p>
+    <p>Trường: Hutech</p>
+
+    <a href="https://www.facebook.com/share/18furiGV1Q/?mibextid=wwXIfr" target="_blank">
+      👉 Facebook của mình
+    </a>
+
+    <form>
+      <input type="text" placeholder="Tên của bạn">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Tin nhắn"></textarea>
+      <button>Gửi (nhưng chưa có backend 😅)</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Minh Thư - Lười nhưng vẫn làm portfolio ✨</p>
+</footer>
+
+</body>
+</html>
+
